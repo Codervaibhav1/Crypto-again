@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(2, 2, 2);
+}
+#logo{
+    width: 80px;
+}
+#home-one{
+    height: 630px;
+}
+#coin{
+    width: 70px;
+}
+#img{
+    width: 80%;
+}
+#coinimg{
+    width: 200px;
+}
+@media (max-width: 764px) {
+    
+    #table-body{
+     display: none;
+     flex-direction: column;
+    }
+    #table-data{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+    }#table-data1{
+        display: none;
+    }#table-data2{
+        display: none;
+    }#table-data3{
+        display: none;
+    }#table-data4{
+        display: none;        
+    }
+    #pages{
+        display: flex;
+        flex-direction: column;
+    }
+    #home-img{
+        display: none;
+    }
+}
