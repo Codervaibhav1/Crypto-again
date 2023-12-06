@@ -61,7 +61,7 @@ const CoinPage = () => {
           <div>
             <h4 className="mt-3">High_24h</h4>
             <span className="d-flex my-2">
-            <div className="border border-2 px-3 w-50 text-success">+{highData}</div>
+            <div className="border border-2 px-3 w-50">{highData}</div>
               <select
                 className="form-select form-select-sm rounded-0 w-25"
                 aria-label="Small select example"
@@ -76,7 +76,7 @@ const CoinPage = () => {
         <div>
             <h4 className="mt-3">Low_24h</h4>
             <span className="d-flex my-2">
-            <div className="border border-2 px-3 w-50 text-danger">-{lowData}</div>
+            <div className="border border-2 px-3 w-50">{lowData}</div>
               <select
                 className="form-select form-select-sm rounded-0 w-25"
                 aria-label="Small select example"

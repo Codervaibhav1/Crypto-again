@@ -1,23 +1,12 @@
 import { createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 import { chartCoins, fetchCoins, pageCoins, searchItem } from "./cryptoServer";
 
-const cryptoSlice = createSlice({
+
+export const cryptoSlice = createSlice({
   name: "coins",
   initialState:{
-    coins: [
-        // {
-        //   image:
-        //     "https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1696501400",
-        //   id: "btc",
-        //   name: "bitcoin",
-        //   high_24h:344567,
-        //   low_24h:-3567,
-        //   current_price: 12345,
-        //   price_change_24h: 1234,
-        //   market_cap_change_24h: 6773270211,
-        // },
-      ],
-      searchcoins: [],
+    coins: [],
+      searchcoins:[],
       pagecoins:[],
       chart:[],
       isLoading:false,
@@ -46,10 +35,10 @@ const cryptoSlice = createSlice({
     .addCase(searchCoin.pending , state =>{
         state.isLoading = true
      })
-     .addCase(searchCoin.fulfilled , (state , action)=>{
-         state.isLoading = false
-         state.searchcoins = action.payload
-         state.isSuccess = true
+     .addCase(searchCoin.fulfilled ,(state , action)=>{
+      state.isLoading = false
+      state.searchcoins = action.payload
+      state.isSuccess = true
      })
      .addCase(searchCoin.rejected , state =>{
          state.isSuccess = false

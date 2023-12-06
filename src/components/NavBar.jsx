@@ -10,8 +10,8 @@ const NavBar = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(searchCoin(text))
-    navigate('/search')
     setText('')
+    navigate('/search')
   };
 
   return (

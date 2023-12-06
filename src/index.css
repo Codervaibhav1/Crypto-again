@@ -5,7 +5,11 @@ body{
     width: 80px;
 }
 #home-one{
+    /* width: 50%; */
     height: 630px;
+}
+#home-img{
+    width: 50%;
 }
 #coin{
     width: 70px;
